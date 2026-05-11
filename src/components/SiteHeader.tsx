@@ -29,7 +29,7 @@ export function SiteHeader() {
             <span className="font-serif text-base md:text-lg tracking-[0.18em] uppercase text-foreground">
               Νικολας Κολοκοτρωνης
             </span>
-            <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολόγος</span>
+            <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολογος</span>
           </span>
         </Link>
 

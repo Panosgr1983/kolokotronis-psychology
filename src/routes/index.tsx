@@ -61,7 +61,7 @@ function HomePage() {
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link to="/about" className="btn-cta text-xs tracking-[0.18em] uppercase">
-                Μάθετε περισσότερα
+                Μαθετε περισσοτερα
               </Link>
               <Link to="/services" className="inline-flex items-center gap-2.5 text-sm tracking-[0.18em] uppercase text-foreground/80 hover:text-primary transition-colors">
                 <PlayCircle className="size-7 text-primary" strokeWidth={1.25} />
@@ -100,7 +100,7 @@ function HomePage() {
 
         <div className="text-center mt-12">
           <Link to="/services" className="text-primary text-xs tracking-[0.2em] uppercase font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">
-            Όλες οι υπηρεσίες <ArrowRight className="size-4" />
+            Ολες οι υπηρεσιες <ArrowRight className="size-4" />
           </Link>
         </div>
       </section>
@@ -109,7 +109,7 @@ function HomePage() {
       <section className="bg-secondary/50 border-y border-border">
         <div className="container-page grid lg:grid-cols-2 gap-12 items-center py-20 md:py-24">
           <div>
-            <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">Σχετικά με εμένα</p>
+            <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">Σχετικα με εμενα</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-6">
               Γεια σας, είμαι ο Νικόλας Κολοκοτρώνης
             </h2>
@@ -123,7 +123,7 @@ function HomePage() {
               Η προσέγγισή μου βασίζεται στην επιστημονική γνώση, την ενσυναίσθηση και τη συνεργασία, δημιουργώντας ένα ασφαλές και εμπιστευτικό πλαίσιο.
             </p>
             <Link to="/about" className="btn-outline text-xs tracking-[0.18em] uppercase">
-              Περισσότερα για εμένα
+              Περισσοτερα για εμενα
             </Link>
           </div>
           <div>
@@ -195,7 +195,7 @@ function HomePage() {
         <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
           <h2 className="font-serif text-3xl md:text-4xl">Πρόσφατα Άρθρα</h2>
           <Link to="/blog" className="text-primary text-xs tracking-[0.2em] uppercase font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">
-            Δείτε όλα τα άρθρα <ArrowRight className="size-4" />
+            Δειτε ολα τα αρθρα <ArrowRight className="size-4" />
           </Link>
         </div>
         <div className="grid md:grid-cols-3 gap-7">
@@ -206,7 +206,7 @@ function HomePage() {
                 <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground mb-3">{p.date}</p>
                 <h3 className="font-serif text-xl leading-snug mb-4">{p.title}</h3>
                 <Link to="/blog" className="text-xs tracking-[0.18em] uppercase text-primary font-medium inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
-                  Διαβάστε περισσότερα <ArrowRight className="size-3.5" />
+                  Διαβαστε περισσοτερα <ArrowRight className="size-3.5" />
                 </Link>
               </div>
             </article>
@@ -218,7 +218,7 @@ function HomePage() {
       <section className="bg-secondary/50 border-t border-border">
         <div className="container-page py-16 md:py-20 grid md:grid-cols-3 gap-10">
           <div>
-            <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">Στοιχεία επικοινωνίας</p>
+            <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">Στοιχεια επικοινωνιας</p>
             <ul className="space-y-5">
               <li className="flex gap-3">
                 <MapPin className="size-5 text-primary mt-0.5 shrink-0" strokeWidth={1.5} />
