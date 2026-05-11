@@ -63,9 +63,12 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-footer-foreground/10">
-        <div className="container-page py-5 text-xs text-footer-foreground/60 flex flex-col sm:flex-row justify-between gap-2">
-          <span>© {new Date().getFullYear()} Νικόλας Κολοκοτρώνης — Ψυχολόγος</span>
-          <span>Νέο Ηράκλειο, Αθήνα</span>
+        <div className="container-page py-5 text-xs text-footer-foreground/60 flex flex-col sm:flex-row justify-between gap-3">
+          <span>© {new Date().getFullYear()} Νικόλας Κολοκοτρώνης — Ψυχολόγος · Νέο Ηράκλειο</span>
+          <div className="flex gap-5">
+            <Link to="/privacy" className="hover:text-footer-foreground">Πολιτική Απορρήτου</Link>
+            <Link to="/terms" className="hover:text-footer-foreground">Όροι Χρήσης</Link>
+          </div>
         </div>
       </div>
     </footer>
