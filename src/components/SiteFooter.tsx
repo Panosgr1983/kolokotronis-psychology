@@ -11,7 +11,7 @@ export function SiteFooter() {
               ΝΚ
             </span>
             <span className="flex flex-col leading-tight">
-              <span className="font-serif text-base tracking-[0.18em] uppercase">Νικόλας Κολοκοτρώνης</span>
+              <span className="font-serif text-base tracking-[0.18em] uppercase">Νικολας Κολοκοτρωνης</span>
               <span className="text-xs tracking-widest uppercase text-footer-foreground/60">Ψυχολόγος</span>
             </span>
           </div>
