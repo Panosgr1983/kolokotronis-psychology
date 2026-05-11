@@ -84,7 +84,7 @@ function HomePage() {
 
       {/* SERVICES */}
       <section className="container-page py-20 md:py-24">
-        <SectionTitle>Πως μπορω να σας βοηθησω</SectionTitle>
+        <SectionTitle>Πώς μπορώ να σας βοηθήσω</SectionTitle>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-8">
           {services.map((s) => (
