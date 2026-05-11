@@ -46,7 +46,7 @@ function ServicesPage() {
           <p className="text-muted-foreground max-w-xl mx-auto mb-6">
             Σε μια πρώτη γνωριμία θα συζητήσουμε τι αναζητάτε και θα προτείνω την κατάλληλη προσέγγιση για εσάς.
           </p>
-          <Link to="/contact" className="btn-cta">Επικοινωνηστε</Link>
+          <Link to="/contact" className="btn-cta">Επικοινωνήστε</Link>
         </div>
       </section>
 
