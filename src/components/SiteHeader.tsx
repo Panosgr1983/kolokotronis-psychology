@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
 
 const nav = [
-  { to: "/", label: "Αρχική" },
-  { to: "/about", label: "Σχετικά με εμένα" },
-  { to: "/services", label: "Υπηρεσίες" },
-  { to: "/blog", label: "Άρθρα" },
-  { to: "/contact", label: "Επικοινωνία" },
+  { to: "/", label: "Αρχικη" },
+  { to: "/about", label: "Σχετικα με εμενα" },
+  { to: "/services", label: "Υπηρεσιες" },
+  { to: "/blog", label: "Αρθρα" },
+  { to: "/contact", label: "Επικοινωνια" },
 ] as const;
 
 function Monogram() {
