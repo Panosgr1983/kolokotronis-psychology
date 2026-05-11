@@ -151,6 +151,8 @@ function HomePage() {
         </div>
       </section>
 
+      <ValuesBand />
+
       {/* TESTIMONIALS */}
       <section className="bg-background">
         <div className="container-page py-20 md:py-24">
