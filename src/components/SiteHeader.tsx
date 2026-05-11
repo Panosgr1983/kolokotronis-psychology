@@ -14,7 +14,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
-      <div className="container-page flex items-center justify-between h-18 py-4">
+      <div className="container-page flex items-center justify-between h-18 py-4 text-slate-800">
         <Link to="/" className="flex flex-col leading-tight" onClick={() => setOpen(false)}>
           <span className="font-serif text-xl text-foreground">Ν. Κολοκοτρώνης</span>
           <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολόγος</span>
