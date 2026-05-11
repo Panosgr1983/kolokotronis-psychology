@@ -57,7 +57,7 @@ function HomePage() {
               Αλλαγή.
             </h1>
             <p className="mt-7 text-base md:text-lg text-muted-foreground leading-relaxed max-w-md">
-              Στήριξη για να αντιμετωπίσετε τις δυσκολίες, να γνωρίσετε καλύτερα τον εαυτό σας και να προχωρήσετε μπροστά.
+              Ένας ασφαλής χώρος για να μιλήσετε, να κατανοήσετε, να προχωρήσετε.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link to="/about" className="btn-cta text-xs tracking-[0.18em] uppercase">
