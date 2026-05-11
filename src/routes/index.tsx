@@ -151,7 +151,44 @@ function HomePage() {
         </div>
       </section>
 
+      {/* TESTIMONIALS */}
+      <section className="bg-background">
+        <div className="container-page py-20 md:py-24">
+          <SectionTitle>Τι λένε όσοι έχουν συνεργαστεί μαζί μου</SectionTitle>
+          <div className="mt-14 grid md:grid-cols-3 gap-7">
+            {[
+              {
+                quote: "Για πρώτη φορά ένιωσα ότι με ακούει κάποιος χωρίς να με κρίνει. Σε λίγους μήνες κατάλαβα πράγματα που με βασάνιζαν χρόνια.",
+                name: "Μ. Π.",
+                role: "Συνεδρίες ατομικής συμβουλευτικής",
+              },
+              {
+                quote: "Ήρθα με έντονο άγχος και έφυγα με εργαλεία που χρησιμοποιώ καθημερινά. Ζεστός, ανθρώπινος και πραγματικά παρών.",
+                name: "Α. Κ.",
+                role: "NLP & συμβουλευτική",
+              },
+              {
+                quote: "Η συνεδρία Ρέικι ήταν μια εμπειρία βαθιάς χαλάρωσης που δεν είχα ξαναζήσει. Έφυγα με μια αίσθηση ισορροπίας.",
+                name: "Ε. Σ.",
+                role: "Συνεδρίες Ρέικι",
+              },
+            ].map((t) => (
+              <figure key={t.name} className="card-soft p-7 flex flex-col">
+                <blockquote className="font-serif text-lg leading-relaxed text-foreground/90 flex-1">
+                  «{t.quote}»
+                </blockquote>
+                <figcaption className="mt-6 pt-5 border-t border-border">
+                  <p className="text-sm font-medium text-foreground">{t.name}</p>
+                  <p className="text-xs tracking-wider uppercase text-muted-foreground mt-1">{t.role}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CtaBand />
+
 
       {/* BLOG PREVIEW */}
       <section className="container-page py-20 md:py-24">
