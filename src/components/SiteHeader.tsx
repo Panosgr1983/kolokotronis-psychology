@@ -4,29 +4,42 @@ import { Menu, X, Calendar } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Αρχική" },
-  { to: "/about", label: "Σχετικά" },
+  { to: "/about", label: "Σχετικά με εμένα" },
   { to: "/services", label: "Υπηρεσίες" },
   { to: "/blog", label: "Άρθρα" },
   { to: "/contact", label: "Επικοινωνία" },
 ] as const;
 
+function Monogram() {
+  return (
+    <span className="inline-flex items-center justify-center size-12 border border-foreground/30 font-serif text-lg tracking-wider text-foreground shrink-0">
+      ΝΚ
+    </span>
+  );
+}
+
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
-      <div className="container-page flex items-center justify-between h-18 py-4 text-slate-800">
-        <Link to="/" className="flex flex-col leading-tight" onClick={() => setOpen(false)}>
-          <span className="font-serif text-xl text-foreground">Ν. Κολοκοτρώνης</span>
-          <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολόγος</span>
+    <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+      <div className="container-page flex items-center justify-between h-20 py-4">
+        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+          <Monogram />
+          <span className="flex flex-col leading-tight">
+            <span className="font-serif text-base md:text-lg tracking-[0.18em] uppercase text-foreground">
+              Νικόλας Κολοκοτρώνης
+            </span>
+            <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολόγος</span>
+          </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7">
           {nav.map((n) => (
             <Link
               key={n.to}
               to={n.to}
-              className="text-sm text-foreground/80 hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary font-medium" }}
+              className="text-[11px] tracking-[0.2em] uppercase text-foreground/75 hover:text-primary transition-colors pb-1 border-b-2 border-transparent"
+              activeProps={{ className: "text-primary border-primary" }}
               activeOptions={{ exact: n.to === "/" }}
             >
               {n.label}
@@ -34,9 +47,9 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <Link to="/contact" className="hidden md:inline-flex btn-cta !py-2.5 !px-5 text-sm">
+        <Link to="/contact" className="hidden md:inline-flex btn-cta !py-2.5 !px-5 text-xs tracking-[0.18em] uppercase">
           <Calendar className="size-4" />
-          Κλείσε ραντεβού
+          Κλείστε ραντεβού
         </Link>
 
         <button
@@ -56,7 +69,7 @@ export function SiteHeader() {
                 key={n.to}
                 to={n.to}
                 onClick={() => setOpen(false)}
-                className="py-3 text-foreground/80"
+                className="py-3 text-foreground/80 text-sm tracking-[0.15em] uppercase"
                 activeProps={{ className: "text-primary font-medium" }}
                 activeOptions={{ exact: n.to === "/" }}
               >
@@ -65,7 +78,7 @@ export function SiteHeader() {
             ))}
             <Link to="/contact" onClick={() => setOpen(false)} className="btn-cta mt-3">
               <Calendar className="size-4" />
-              Κλείσε ραντεβού
+              Κλείστε ραντεβού
             </Link>
           </div>
         </div>
