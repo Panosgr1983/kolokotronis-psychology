@@ -49,35 +49,37 @@ function HomePage() {
   return (
     <PageShell>
       {/* HERO */}
-      <section className="relative isolate overflow-hidden">
-        <img
-          src={heroImg}
-          alt="Ζεστός, ήσυχος χώρος θεραπείας"
-          width={1920}
-          height={1280}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/85 via-foreground/65 to-foreground/20" />
-        <div className="relative container-page min-h-[80vh] flex items-center py-24 md:py-32">
-          <div className="max-w-xl text-background">
-            <Leaf className="size-7 text-cta mb-6 -rotate-12" />
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05]">
+      <section className="bg-background">
+        <div className="container-page grid lg:grid-cols-2 gap-10 lg:gap-14 items-center pt-12 md:pt-16 pb-16 md:pb-24">
+          <div className="max-w-xl">
+            <Leaf className="size-7 text-primary mb-6 -rotate-12" />
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-foreground leading-[1.05]">
               Κατανόηση.<br />
               Αποδοχή.<br />
               Αλλαγή.
             </h1>
-            <p className="mt-7 text-base md:text-lg text-background/80 leading-relaxed max-w-md">
+            <p className="mt-7 text-base md:text-lg text-muted-foreground leading-relaxed max-w-md">
               Ένας ασφαλής χώρος για να μιλήσετε, να κατανοήσετε, να προχωρήσετε.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link to="/about" className="btn-cta text-xs tracking-[0.18em] uppercase">
                 Μαθετε περισσοτερα
               </Link>
-              <Link to="/services" className="inline-flex items-center gap-2.5 text-sm tracking-[0.18em] uppercase text-background/90 hover:text-cta transition-colors">
-                <PlayCircle className="size-7 text-cta" strokeWidth={1.25} />
+              <Link to="/services" className="inline-flex items-center gap-2.5 text-sm tracking-[0.18em] uppercase text-foreground/80 hover:text-primary transition-colors">
+                <PlayCircle className="size-7 text-primary" strokeWidth={1.25} />
                 Πως μπορω να σας βοηθησω
               </Link>
             </div>
+          </div>
+
+          <div className="relative">
+            <img
+              src={heroImg}
+              alt="Ζεστός, ήσυχος χώρος θεραπείας"
+              width={1280}
+              height={1280}
+              className="rounded-l-[3rem] rounded-tr-[3rem] aspect-[5/4] object-cover w-full shadow-[var(--shadow-card)]"
+            />
           </div>
         </div>
       </section>
