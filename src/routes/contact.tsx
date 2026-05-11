@@ -16,13 +16,6 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [sent, setSent] = useState(false);
-
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSent(true);
-  }
-
   return (
     <PageShell>
       <PageHero
@@ -81,40 +74,8 @@ function ContactPage() {
 
         {/* FORM */}
         <div className="card-soft p-8 md:p-10">
-          <h2 className="font-serif text-2xl mb-2">Στείλτε μήνυμα</h2>
           <p className="text-sm text-muted-foreground mb-6">Θα σας απαντήσω εντός 24 ωρών.</p>
-
-          {sent ? (
-            <div className="bg-primary/10 border border-primary/30 rounded-lg p-6 text-center">
-              <p className="font-serif text-xl text-primary mb-1">Ευχαριστώ!</p>
-              <p className="text-muted-foreground text-sm">Έλαβα το μήνυμά σας και θα επικοινωνήσω σύντομα.</p>
-            </div>
-          ) : (
-            <form onSubmit={onSubmit} className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium mb-1.5">Ονοματεπώνυμο</label>
-                <input required maxLength={100} className="w-full bg-background border border-input rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" />
-              </div>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium mb-1.5">Email</label>
-                  <input required type="email" maxLength={150} className="w-full bg-background border border-input rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-1.5">Τηλέφωνο</label>
-                  <input type="tel" maxLength={20} className="w-full bg-background border border-input rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring" />
-                </div>
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1.5">Μήνυμα</label>
-                <textarea required maxLength={1500} rows={5} className="w-full bg-background border border-input rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring resize-none" />
-              </div>
-              <button type="submit" className="btn-cta w-full">
-                <Send className="size-4" /> Αποστολή μηνύματος
-              </button>
-              <p className="text-xs text-muted-foreground text-center">Τα στοιχεία σας είναι ασφαλή και δεν κοινοποιούνται.</p>
-            </form>
-          )}
+          <ContactForm />
         </div>
       </section>
 
