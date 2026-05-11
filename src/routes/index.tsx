@@ -22,16 +22,16 @@ export const Route = createFileRoute("/")({
 });
 
 const blogPosts = [
-  { img: blog1, date: "12 Μαρ 2024", title: "Πώς να διαχειριστείτε το άγχος στην καθημερινότητα" },
-  { img: blog2, date: "05 Μαρ 2024", title: "Αυτογνωσία: το κλειδί για ουσιαστικές αλλαγές" },
-  { img: blog3, date: "27 Φεβ 2024", title: "Όρια: γιατί είναι σημαντικά και πώς τα θέτουμε" },
+  { img: blog1, date: "12 Μαρ 2026", title: "Πώς να διαχειριστείτε το άγχος στην καθημερινότητα" },
+  { img: blog2, date: "05 Μαρ 2026", title: "Αυτογνωσία: το κλειδί για ουσιαστικές αλλαγές" },
+  { img: blog3, date: "27 Φεβ 2026", title: "Όρια: γιατί είναι σημαντικά και πώς τα θέτουμε" },
 ];
 
 const credentials = [
   { icon: GraduationCap, label: "MSc Ψυχολογίας" },
   { icon: Award, label: "Πιστοποιημένος Reiki Master" },
   { icon: BookOpen, label: "NLP Practitioner" },
-  { icon: ShieldCheck, label: "Μέλος ΣΕΨ" },
+  { icon: ShieldCheck, label: "Μέλος Συλλόγου Ελλήνων Ψυχολόγων (ΣΕΨ)" },
 ];
 
 function HomePage() {
@@ -75,7 +75,7 @@ function HomePage() {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Υπηρεσίες</p>
           <h2 className="font-serif text-3xl md:text-4xl">Πώς μπορώ να σας βοηθήσω</h2>
-          <p className="mt-4 text-muted-foreground">Μια ολιστική προσέγγιση που συνδυάζει επιστημονική γνώση με σεβασμό στον άνθρωπο.</p>
+          <p className="mt-4 text-muted-foreground">Μια συνδυαστική προσέγγιση που ενώνει την επιστημονική γνώση με σεβασμό στον άνθρωπο.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
