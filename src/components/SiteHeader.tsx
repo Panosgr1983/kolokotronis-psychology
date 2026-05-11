@@ -27,7 +27,7 @@ export function SiteHeader() {
           <Monogram />
           <span className="flex flex-col leading-tight">
             <span className="font-serif text-base md:text-lg tracking-[0.18em] uppercase text-foreground">
-              Νικόλας Κολοκοτρώνης
+              Νικολας Κολοκοτρωνης
             </span>
             <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολόγος</span>
           </span>
