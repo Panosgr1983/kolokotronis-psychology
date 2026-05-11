@@ -218,7 +218,7 @@ function HomePage() {
 
       {/* CONTACT PREVIEW */}
       <section className="bg-secondary/50 border-t border-border">
-        <div className="container-page py-16 md:py-20 grid md:grid-cols-3 gap-10">
+        <div className="container-page py-16 md:py-20 grid lg:grid-cols-3 gap-10">
           <div>
             <p className="text-xs tracking-[0.25em] uppercase text-primary mb-4">Στοιχεια επικοινωνιας</p>
             <ul className="space-y-5">
@@ -244,7 +244,11 @@ function HomePage() {
             </Link>
           </div>
 
-          <div className="md:col-span-2 overflow-hidden rounded-xl border border-border">
+          <div className="card-soft p-6">
+            <ContactForm compact />
+          </div>
+
+          <div className="overflow-hidden rounded-xl border border-border">
             <iframe
               title="Map"
               src="https://www.google.com/maps?q=Απόλλωνος+30,+Νέο+Ηράκλειο,+Αθήνα&output=embed"
