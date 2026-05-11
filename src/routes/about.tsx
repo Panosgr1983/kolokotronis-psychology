@@ -64,7 +64,7 @@ function AboutPage() {
       <section className="bg-secondary/40 border-y border-border">
         <div className="container-page py-16 md:py-20 grid lg:grid-cols-2 gap-12">
           <div>
-            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Εκπαίδευση & πιστοποιήσεις</p>
+            <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Εκπαιδευση & πιστοποιησεις</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-2">Σπουδές</h2>
             <p className="text-muted-foreground">Διαρκής εκπαίδευση σε επιστημονικές και συμπληρωματικές μεθόδους.</p>
           </div>
@@ -81,14 +81,14 @@ function AboutPage() {
 
       <section className="container-page py-16 md:py-20 grid md:grid-cols-2 gap-10">
         <div className="card-soft p-8 md:p-10">
-          <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Φιλοσοφία</p>
+          <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Φιλοσοφια</p>
           <h2 className="font-serif text-3xl mb-4">Κατανόηση πριν την αλλαγή</h2>
           <p className="text-muted-foreground leading-relaxed">
             Πιστεύω πως η ουσιαστική αλλαγή ξεκινά από την κατανόηση και την αποδοχή. Ο ρόλος μου δεν είναι να σας δώσω απαντήσεις, αλλά να σταθώ δίπλα σας καθώς ανακαλύπτετε τις δικές σας. Κάθε άνθρωπος είναι μοναδικός — και η θεραπευτική διαδρομή πρέπει να σέβεται αυτή τη μοναδικότητα.
           </p>
         </div>
         <div className="card-soft p-8 md:p-10">
-          <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Πώς δουλεύω</p>
+          <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Πως δουλευω</p>
           <h2 className="font-serif text-3xl mb-4">Ένα ολοκληρωμένο πλαίσιο</h2>
           <p className="text-muted-foreground leading-relaxed">
             Συνδυάζω ψυχοθεραπευτικό διάλογο με τεχνικές σωματικής επίγνωσης, διαλογισμού και — όπου ταιριάζει — ενεργειακής εργασίας. Οι συνεδρίες είναι 50 λεπτά, σε ένα ζεστό και απόλυτα εμπιστευτικό περιβάλλον. Δουλεύουμε με τους δικούς σας στόχους και τον δικό σας ρυθμό.

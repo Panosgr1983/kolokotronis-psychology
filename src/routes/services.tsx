@@ -35,7 +35,7 @@ function ServicesPage() {
               <h2 className="font-serif text-2xl mb-3">{s.title}</h2>
               <p className="text-muted-foreground leading-relaxed mb-6 flex-1">{s.description}</p>
               <Link to="/contact" className="text-primary font-medium inline-flex items-center gap-2 hover:gap-3 transition-all text-sm">
-                Κλείστε ραντεβού <ArrowRight className="size-4" />
+                Κλειστε ραντεβου <ArrowRight className="size-4" />
               </Link>
             </article>
           ))}

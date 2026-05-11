@@ -18,7 +18,7 @@ export function CtaBand() {
         </div>
         <Link to="/contact" className="btn-cta shrink-0 text-xs tracking-[0.18em] uppercase">
           <Calendar className="size-4" />
-          Κλείστε ραντεβού
+          Κλειστε ραντεβου
         </Link>
       </div>
     </section>

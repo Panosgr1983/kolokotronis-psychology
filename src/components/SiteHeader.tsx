@@ -29,7 +29,7 @@ export function SiteHeader() {
             <span className="font-serif text-base md:text-lg tracking-[0.18em] uppercase text-foreground">
               Νικολας Κολοκοτρωνης
             </span>
-            <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολόγος</span>
+            <span className="text-xs tracking-widest uppercase text-muted-foreground">Ψυχολογος</span>
           </span>
         </Link>
 
@@ -49,7 +49,7 @@ export function SiteHeader() {
 
         <Link to="/contact" className="hidden md:inline-flex btn-cta !py-2.5 !px-5 text-xs tracking-[0.18em] uppercase">
           <Calendar className="size-4" />
-          Κλείστε ραντεβού
+          Κλειστε ραντεβου
         </Link>
 
         <button
@@ -78,7 +78,7 @@ export function SiteHeader() {
             ))}
             <Link to="/contact" onClick={() => setOpen(false)} className="btn-cta mt-3">
               <Calendar className="size-4" />
-              Κλείστε ραντεβού
+              Κλειστε ραντεβου
             </Link>
           </div>
         </div>

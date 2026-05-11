@@ -49,7 +49,7 @@ function BlogPage() {
                 <h2 className="font-serif text-xl leading-snug mb-3">{p.title}</h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">{p.excerpt}</p>
                 <button type="button" className="text-sm text-primary font-medium inline-flex items-center gap-1.5 hover:gap-2.5 transition-all self-start">
-                  Διαβάστε <ArrowRight className="size-3.5" />
+                  Διαβαστε <ArrowRight className="size-3.5" />
                 </button>
               </div>
             </article>

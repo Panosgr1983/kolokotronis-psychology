@@ -12,7 +12,7 @@ export function SiteFooter() {
             </span>
             <span className="flex flex-col leading-tight">
               <span className="font-serif text-base tracking-[0.18em] uppercase">Νικολας Κολοκοτρωνης</span>
-              <span className="text-xs tracking-widest uppercase text-footer-foreground/60">Ψυχολόγος</span>
+              <span className="text-xs tracking-widest uppercase text-footer-foreground/60">Ψυχολογος</span>
             </span>
           </div>
           <p className="text-sm text-footer-foreground/70 max-w-sm leading-relaxed">
@@ -30,7 +30,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.2em] uppercase mb-4 text-footer-foreground/60">Πλοήγηση</h4>
+          <h4 className="text-xs tracking-[0.2em] uppercase mb-4 text-footer-foreground/60">Πλοηγηση</h4>
           <ul className="space-y-2.5 text-sm">
             {[
               { to: "/", label: "Αρχική" },
@@ -49,7 +49,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.2em] uppercase mb-4 text-footer-foreground/60">Επικοινωνία</h4>
+          <h4 className="text-xs tracking-[0.2em] uppercase mb-4 text-footer-foreground/60">Επικοινωνια</h4>
           <ul className="space-y-3 text-sm text-footer-foreground/80">
             <li className="flex gap-3">
               <MapPin className="size-4 mt-0.5 shrink-0" />
