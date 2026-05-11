@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Calendar, ArrowRight, Phone, MapPin, ShieldCheck, Award, BookOpen, GraduationCap, PlayCircle, Leaf } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { CtaBand } from "@/components/CtaBand";
+import { ValuesBand } from "@/components/ValuesBand";
+import { ContactForm } from "@/components/ContactForm";
 import { services } from "@/lib/services-data";
 import heroImg from "@/assets/hero-office.jpg";
 import portraitImg from "@/assets/portrait.jpg";
