@@ -57,7 +57,7 @@ function HomePage() {
               Αλλαγή.
             </h1>
             <p className="mt-7 text-base md:text-lg text-muted-foreground leading-relaxed max-w-md">
-              Στήριξη για να αντιμετωπίσετε τις δυσκολίες, να γνωρίσετε καλύτερα τον εαυτό σας και να προχωρήσετε μπροστά.
+              Ένας ασφαλής χώρος για να μιλήσετε, να κατανοήσετε, να προχωρήσετε.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link to="/about" className="btn-cta text-xs tracking-[0.18em] uppercase">
@@ -114,6 +114,9 @@ function HomePage() {
               Γεια σας, είμαι ο Νικόλας Κολοκοτρώνης
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
+              Πιστεύω ότι κάθε άνθρωπος κουβαλά μέσα του τη δύναμη να αλλάξει — απλώς, μερικές φορές, χρειάζεται κάποιον δίπλα του για να τη ξαναβρεί. Αυτόν τον ρόλο επιλέγω να κρατώ στη δουλειά μου.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
               Είμαι Ψυχολόγος και σύμβουλος ψυχικής υγείας, με εξειδίκευση σε συμπληρωματικές προσεγγίσεις (Ρέικι, NLP, Σωματοδυναμική Ψυχοθεραπεία) και πολυετή εμπειρία στην υποστήριξη ενηλίκων που επιθυμούν να ξεπεράσουν δυσκολίες και να ζήσουν μια πιο ισορροπημένη και ουσιαστική ζωή.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
@@ -148,7 +151,44 @@ function HomePage() {
         </div>
       </section>
 
+      {/* TESTIMONIALS */}
+      <section className="bg-background">
+        <div className="container-page py-20 md:py-24">
+          <SectionTitle>Τι λένε όσοι έχουν συνεργαστεί μαζί μου</SectionTitle>
+          <div className="mt-14 grid md:grid-cols-3 gap-7">
+            {[
+              {
+                quote: "Για πρώτη φορά ένιωσα ότι με ακούει κάποιος χωρίς να με κρίνει. Σε λίγους μήνες κατάλαβα πράγματα που με βασάνιζαν χρόνια.",
+                name: "Μ. Π.",
+                role: "Συνεδρίες ατομικής συμβουλευτικής",
+              },
+              {
+                quote: "Ήρθα με έντονο άγχος και έφυγα με εργαλεία που χρησιμοποιώ καθημερινά. Ζεστός, ανθρώπινος και πραγματικά παρών.",
+                name: "Α. Κ.",
+                role: "NLP & συμβουλευτική",
+              },
+              {
+                quote: "Η συνεδρία Ρέικι ήταν μια εμπειρία βαθιάς χαλάρωσης που δεν είχα ξαναζήσει. Έφυγα με μια αίσθηση ισορροπίας.",
+                name: "Ε. Σ.",
+                role: "Συνεδρίες Ρέικι",
+              },
+            ].map((t) => (
+              <figure key={t.name} className="card-soft p-7 flex flex-col">
+                <blockquote className="font-serif text-lg leading-relaxed text-foreground/90 flex-1">
+                  «{t.quote}»
+                </blockquote>
+                <figcaption className="mt-6 pt-5 border-t border-border">
+                  <p className="text-sm font-medium text-foreground">{t.name}</p>
+                  <p className="text-xs tracking-wider uppercase text-muted-foreground mt-1">{t.role}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CtaBand />
+
 
       {/* BLOG PREVIEW */}
       <section className="container-page py-20 md:py-24">
