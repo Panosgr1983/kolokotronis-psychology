@@ -9,7 +9,7 @@ export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
       { title: "Άρθρα — Ψυχολογία & Αυτογνωσία | Ν. Κολοκοτρώνης" },
-      { name: "description", content: "Σκέψεις και άρθρα για την ψυχική υγεία, την αυτογνωσία και την ολιστική ευεξία." },
+      { name: "description", content: "Σκέψεις και άρθρα για την ψυχική υγεία, την αυτογνωσία και τη συνολική ευεξία." },
       { property: "og:title", content: "Άρθρα — Νικόλας Κολοκοτρώνης" },
       { property: "og:description", content: "Σκέψεις για την ψυχική υγεία και την αυτογνωσία." },
     ],
@@ -32,7 +32,7 @@ function BlogPage() {
       <PageHero
         eyebrow="Άρθρα"
         title="Σκέψεις για την ψυχική υγεία"
-        subtitle="Άρθρα για την αυτογνωσία, τις σχέσεις και την ολιστική ευεξία."
+        subtitle="Άρθρα για την αυτογνωσία, τις σχέσεις και τη συνολική ευεξία."
       />
 
       <section className="container-page py-16 md:py-20">

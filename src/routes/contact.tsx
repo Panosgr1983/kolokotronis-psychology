@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Phone, MapPin, Mail, Clock, Send } from "lucide-react";
+import { Phone, MapPin, Facebook, Clock, Send } from "lucide-react";
 import { PageShell, PageHero } from "@/components/PageShell";
 
 export const Route = createFileRoute("/contact")({
@@ -70,11 +70,11 @@ function ContactPage() {
 
           <div className="card-soft p-7 flex gap-5">
             <span className="size-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-              <Mail className="size-5" />
+              <Facebook className="size-5" />
             </span>
             <div>
-              <p className="text-sm text-muted-foreground mb-1">Email</p>
-              <a href="mailto:info@kolokotronis.gr" className="text-foreground hover:text-primary">info@kolokotronis.gr</a>
+              <p className="text-sm text-muted-foreground mb-1">Social</p>
+              <a href="https://www.facebook.com/nikolas.kolokotronis/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary">Facebook</a>
             </div>
           </div>
         </div>
