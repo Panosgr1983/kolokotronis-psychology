@@ -238,7 +238,7 @@ function HomePage() {
               </li>
             </ul>
             <Link to="/contact" className="btn-cta mt-7 text-xs tracking-[0.18em] uppercase">
-              <Calendar className="size-4" /> Κλείστε ραντεβού
+              <Calendar className="size-4" /> Κλειστε ραντεβου
             </Link>
           </div>
 
