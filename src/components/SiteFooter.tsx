@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Facebook } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -43,8 +43,8 @@ export function SiteFooter() {
               <a href="tel:+306974371139" className="hover:text-footer-foreground">+30 697 437 1139</a>
             </li>
             <li className="flex gap-3">
-              <Mail className="size-4 mt-0.5 shrink-0" />
-              <a href="mailto:info@kolokotronis.gr" className="hover:text-footer-foreground">info@kolokotronis.gr</a>
+              <Facebook className="size-4 mt-0.5 shrink-0" />
+              <a href="https://www.facebook.com/nikolas.kolokotronis/" target="_blank" rel="noopener noreferrer" className="hover:text-footer-foreground">Facebook</a>
             </li>
           </ul>
         </div>

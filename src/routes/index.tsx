@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Νικόλας Κολοκοτρώνης — Ψυχολόγος | Νέο Ηράκλειο" },
-      { name: "description", content: "Ένας ασφαλής χώρος για αυτογνωσία, ισορροπία και αλλαγή. Ατομικές συνεδρίες, Ρέικι, NLP και ολιστική προσέγγιση στο Νέο Ηράκλειο." },
+      { name: "description", content: "Ένας ασφαλής χώρος για αυτογνωσία, ισορροπία και αλλαγή. Ατομικές συνεδρίες, Ρέικι, NLP και συνδυαστική προσέγγιση στο Νέο Ηράκλειο." },
       { property: "og:title", content: "Νικόλας Κολοκοτρώνης — Ψυχολόγος" },
       { property: "og:description", content: "Ένας ασφαλής χώρος για αυτογνωσία, ισορροπία και αλλαγή." },
     ],
@@ -22,16 +22,16 @@ export const Route = createFileRoute("/")({
 });
 
 const blogPosts = [
-  { img: blog1, date: "12 Μαρ 2024", title: "Πώς να διαχειριστείτε το άγχος στην καθημερινότητα" },
-  { img: blog2, date: "05 Μαρ 2024", title: "Αυτογνωσία: το κλειδί για ουσιαστικές αλλαγές" },
-  { img: blog3, date: "27 Φεβ 2024", title: "Όρια: γιατί είναι σημαντικά και πώς τα θέτουμε" },
+  { img: blog1, date: "12 Μαρ 2026", title: "Πώς να διαχειριστείτε το άγχος στην καθημερινότητα" },
+  { img: blog2, date: "05 Μαρ 2026", title: "Αυτογνωσία: το κλειδί για ουσιαστικές αλλαγές" },
+  { img: blog3, date: "27 Φεβ 2026", title: "Όρια: γιατί είναι σημαντικά και πώς τα θέτουμε" },
 ];
 
 const credentials = [
   { icon: GraduationCap, label: "MSc Ψυχολογίας" },
   { icon: Award, label: "Πιστοποιημένος Reiki Master" },
   { icon: BookOpen, label: "NLP Practitioner" },
-  { icon: ShieldCheck, label: "Μέλος ΣΕΨ" },
+  { icon: ShieldCheck, label: "Μέλος Συλλόγου Ελλήνων Ψυχολόγων (ΣΕΨ)" },
 ];
 
 function HomePage() {
@@ -75,7 +75,7 @@ function HomePage() {
         <div className="text-center max-w-2xl mx-auto mb-14">
           <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Υπηρεσίες</p>
           <h2 className="font-serif text-3xl md:text-4xl">Πώς μπορώ να σας βοηθήσω</h2>
-          <p className="mt-4 text-muted-foreground">Μια ολιστική προσέγγιση που συνδυάζει επιστημονική γνώση με σεβασμό στον άνθρωπο.</p>
+          <p className="mt-4 text-muted-foreground">Μια συνδυαστική προσέγγιση που ενώνει την επιστημονική γνώση με σεβασμό στον άνθρωπο.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
@@ -112,7 +112,7 @@ function HomePage() {
             <p className="text-xs tracking-[0.2em] uppercase text-primary mb-3">Σχετικά με εμένα</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-5">Γεια σας, είμαι ο Νικόλας</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Ψυχολόγος, σύμβουλος ψυχικής υγείας, δάσκαλος παραδοσιακού Ρέικι, συγγραφέας και στιχουργός. Συνδυάζω την ψυχοθεραπευτική εργασία με ολιστικές προσεγγίσεις για να υποστηρίξω την ισορροπία σώματος και νου.
+              Ψυχολόγος, σύμβουλος ψυχικής υγείας, δάσκαλος παραδοσιακού Ρέικι, συγγραφέας και στιχουργός. Συνδυάζω την ψυχοθεραπευτική εργασία με συμπληρωματικές προσεγγίσεις για να υποστηρίξω την ισορροπία σώματος και νου.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-7">
               Η δουλειά μου βασίζεται στην εμπιστοσύνη, την ενσυναίσθηση και τον σεβασμό στη μοναδική διαδρομή του κάθε ανθρώπου.
